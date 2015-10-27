@@ -1,0 +1,66 @@
+{
+    "status": 1,
+    "msg": "ok",
+    "data": [
+             {
+             "id": "12",
+             "name": "杂货",
+             "en_name": "Groceries"
+             },
+             {
+             "id": "5",
+             "name": "护肤",
+             "en_name": "Skin Care"
+             },
+             {
+             "id": "1",
+             "name": "家居",
+             "en_name": "Home"
+             },
+             {
+             "id": "2",
+             "name": "创意",
+             "en_name": "Originality"
+             },
+             {
+             "id": "6",
+             "name": "美食",
+             "en_name": "Food"
+             },
+             {
+             "id": "3",
+             "name": "办公",
+             "en_name": "Office"
+             },
+             {
+             "id": "10",
+             "name": "厨具",
+             "en_name": "Kitchen"
+             },
+             {
+             "id": "13",
+             "name": "运动",
+             "en_name": "Sports"
+             },
+             {
+             "id": "4",
+             "name": "卫浴",
+             "en_name": "Bathroom"
+             },
+             {
+             "id": "8",
+             "name": "主题",
+             "en_name": "Theme"
+             },
+             {
+             "id": "14",
+             "name": "数码",
+             "en_name": "Digital"
+             },
+             {
+             "id": "9",
+             "name": "植物",
+             "en_name": "Plant"
+             }
+             ]
+}

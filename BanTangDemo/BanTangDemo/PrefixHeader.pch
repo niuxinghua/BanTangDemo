@@ -1,0 +1,31 @@
+
+//
+//  PrefixHeader.pch
+//  BanTangDemo
+//
+//  Created by Tony Stark on 15/8/17.
+//  Copyright (c) 2015年 Tony Stark. All rights reserved.
+//
+
+#ifndef _______PrefixHeader_pch
+#define _______PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "JHConst.h"
+#import "UIView+JHCGExt.h"
+
+#define JHColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define JHDefaultBackgroundColor() JHColor(228, 57, 65, 1)
+#define JHDefaultSelectedColor() JHColor(234, 70, 73, 1)
+#define JHDefaultNormalColor() JHColor(247, 247, 247, 1)
+#define JHDefaultFontPinColor() JHColor(241, 142, 143, 1)
+#define JHDefaultFontGaryColor() JHColor(106, 106, 106, 1)
+
+#define barButtonOffset 15
+
+#define JHMainScreenBounds [UIScreen mainScreen].bounds
+#define JHKeyWindow [UIApplication sharedApplication].keyWindow
+
+#endif

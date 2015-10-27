@@ -1,0 +1,1 @@
+../../../JHBannerView/JHBannerView/JHBannerView.h

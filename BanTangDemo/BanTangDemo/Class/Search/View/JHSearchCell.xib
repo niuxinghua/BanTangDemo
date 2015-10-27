@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="K8c-ew-Tzt" userLabel="Search Cell" customClass="JHSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="152"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCA-Bw-6mx" userLabel="大容器">
+                        <rect key="frame" x="0.0" y="0.0" width="281" height="152"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCg-96-eJ3" userLabel="小容器">
+                                <rect key="frame" x="28" y="38" width="225" height="76"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ii9-Yg-gcx">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ii9-Yg-gcx" secondAttribute="height" multiplier="1:1" id="EEv-Lm-brX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heD-dS-MYD" userLabel="中文label">
+                                        <rect key="frame" x="81" y="0.0" width="144" height="44.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-bP-3mR" userLabel="英文label">
+                                        <rect key="frame" x="81" y="44" width="144" height="31.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7xH-bP-3mR" secondAttribute="trailing" id="2oy-Bt-KZg"/>
+                                    <constraint firstItem="7xH-bP-3mR" firstAttribute="top" secondItem="heD-dS-MYD" secondAttribute="bottom" id="4pb-UZ-VKQ"/>
+                                    <constraint firstItem="ii9-Yg-gcx" firstAttribute="top" secondItem="DCg-96-eJ3" secondAttribute="top" id="9Nb-xy-IBt"/>
+                                    <constraint firstItem="heD-dS-MYD" firstAttribute="top" secondItem="DCg-96-eJ3" secondAttribute="top" id="CUv-6e-PF0"/>
+                                    <constraint firstItem="ii9-Yg-gcx" firstAttribute="leading" secondItem="DCg-96-eJ3" secondAttribute="leading" id="GyF-Gn-vbX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ii9-Yg-gcx" secondAttribute="bottom" id="QsL-zt-S7i"/>
+                                    <constraint firstAttribute="bottom" secondItem="7xH-bP-3mR" secondAttribute="bottom" id="ST3-ff-WXH"/>
+                                    <constraint firstItem="7xH-bP-3mR" firstAttribute="leading" secondItem="ii9-Yg-gcx" secondAttribute="trailing" constant="5" id="b7u-77-JcE"/>
+                                    <constraint firstItem="heD-dS-MYD" firstAttribute="leading" secondItem="ii9-Yg-gcx" secondAttribute="trailing" constant="5" id="jod-OU-N5v"/>
+                                    <constraint firstAttribute="trailing" secondItem="heD-dS-MYD" secondAttribute="trailing" id="pbi-9E-3A3"/>
+                                    <constraint firstAttribute="height" secondItem="heD-dS-MYD" secondAttribute="height" multiplier="1.7" id="xat-SK-4dq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DCg-96-eJ3" secondAttribute="centerX" id="ByG-uu-BvM"/>
+                            <constraint firstAttribute="centerY" secondItem="DCg-96-eJ3" secondAttribute="centerY" id="ihY-XT-eT8"/>
+                            <constraint firstItem="DCg-96-eJ3" firstAttribute="height" secondItem="YCA-Bw-6mx" secondAttribute="height" multiplier="0.5" id="l32-YA-h9m"/>
+                            <constraint firstItem="DCg-96-eJ3" firstAttribute="width" secondItem="YCA-Bw-6mx" secondAttribute="width" multiplier="0.8" id="lel-y6-rVr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="YCA-Bw-6mx" firstAttribute="leading" secondItem="K8c-ew-Tzt" secondAttribute="leading" id="5VU-VI-XWb"/>
+                <constraint firstAttribute="trailing" secondItem="YCA-Bw-6mx" secondAttribute="trailing" id="R0j-ci-8Fu"/>
+                <constraint firstAttribute="bottom" secondItem="YCA-Bw-6mx" secondAttribute="bottom" id="lTk-7f-ya6"/>
+                <constraint firstItem="YCA-Bw-6mx" firstAttribute="top" secondItem="K8c-ew-Tzt" secondAttribute="top" id="zn8-VA-y0B"/>
+            </constraints>
+            <size key="customSize" width="281" height="152"/>
+            <connections>
+                <outlet property="labelCN" destination="heD-dS-MYD" id="w8i-Hd-ffG"/>
+                <outlet property="labelEN" destination="7xH-bP-3mR" id="5o7-04-xcs"/>
+                <outlet property="logo" destination="ii9-Yg-gcx" id="mLV-EV-Hr5"/>
+            </connections>
+            <point key="canvasLocation" x="324.5" y="42"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JHNiceProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="342"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BIb-fl-FMn">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="232"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BIb-fl-FMn" secondAttribute="height" multiplier="1:1" id="XZg-JK-G2Q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRJ-bu-PXa">
+                    <rect key="frame" x="0.0" y="232" width="232" height="55"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdT-Ii-N18">
+                    <rect key="frame" x="0.0" y="287" width="232" height="55"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kdT-Ii-N18" secondAttribute="trailing" id="E7K-bd-w1p"/>
+                <constraint firstItem="kdT-Ii-N18" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LaP-y8-I81"/>
+                <constraint firstAttribute="bottom" secondItem="kdT-Ii-N18" secondAttribute="bottom" id="O4I-dv-osH"/>
+                <constraint firstItem="hRJ-bu-PXa" firstAttribute="top" secondItem="BIb-fl-FMn" secondAttribute="bottom" id="Vac-Uy-Uvx"/>
+                <constraint firstItem="kdT-Ii-N18" firstAttribute="top" secondItem="hRJ-bu-PXa" secondAttribute="bottom" id="WOx-58-FUC"/>
+                <constraint firstItem="BIb-fl-FMn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xl9-KZ-JQG"/>
+                <constraint firstItem="hRJ-bu-PXa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gmX-fF-mYN"/>
+                <constraint firstItem="BIb-fl-FMn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t0T-Ny-aOR"/>
+                <constraint firstAttribute="trailing" secondItem="BIb-fl-FMn" secondAttribute="trailing" id="ucY-Cl-66Y"/>
+                <constraint firstAttribute="trailing" secondItem="hRJ-bu-PXa" secondAttribute="trailing" id="vJh-7A-lke"/>
+                <constraint firstItem="kdT-Ii-N18" firstAttribute="height" secondItem="hRJ-bu-PXa" secondAttribute="height" id="w7V-Ma-nyc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="BIb-fl-FMn" id="Kid-9L-GuS"/>
+                <outlet property="priceLabel" destination="kdT-Ii-N18" id="uYb-eC-pAL"/>
+                <outlet property="textLabel" destination="hRJ-bu-PXa" id="c0B-xO-qoc"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="361"/>
+        </view>
+    </objects>
+</document>
